@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário</title>
-  </head>
-  <body>
-    <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
-      <br />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <h1>Formulário HTML</h1>
+    <h2>Nome dos participantes do grupo: </h2>
+    <p>Jyulia Rodrigues- ADS</p>
+    <P>Lucas Silveira- ADS </P>
+    <p>Rafael Vieira- ADS</p>
+    <p>Vinicus Medeiros- ADS</p>
+    <p>Fernanda Menezes- CD </p>
 
-      <label for="data_nascimento">Data de Nascimento:</label>
-      <input type="date" id="data_nascimento" name="data_nascimento" required />
-      <br />
 
-      <label for="sexo">Sexo:</label>
-      <input type="radio" id="M" name="M" value="M" />
-      <label for="M">Masc</label>
-      <input type="radio" id="F" name="F" value="F" />
-      <label for="F">Fem</label>
-      <input type="radio" id="I" name="I" value="I" />
-      <label for="I">Prefiro não informar</label>
-      <br />
+    <h2> Responda as perguntas abaixo:</h2>
+    <ol type="a">
+     <!--entidade HTML
+     Para excluir < usa &lt;     - less than
+     Para excluir > usa &gt;     - greater than
 
-      <label for="endereco">Endereço:</label><br />
-      <label for="logradouro">Logradouro:</label>
-      <input type="text" id="logradouro" name="logradouro" required />
-      <br />
+    -->
+        <strong>  <li> Na tag &lt;input&gt; com atributo type="text", para que serve o atributo "placeholder"?</li></strong>
+        <p> Placeholder é um atributo de entrada que especifica uma dica curta que descreve o valor esperado de um campo de entrada.
+ 
+              </p>
+        <strong><li>Na tag &lt;input&gt; com atributo type="radio" ou type="checkbox", para que serve o atributo "checked"?</li> </strong>
+        <p>  Checked é um atributo booleano que quando presente, especifica que um elemento &lt;input&gt; deve ser pré-selecionado quando a página for carregada.
 
-      <label for="bairro">Bairro:</label>
-      <input type="text" id="bairro" name="bairro" required />
-      <br />
+              </p>
+       <strong> <li>Na tag &lt;input&gt; para que serve o atributo "value"?</li> </strong>
+        <p> Value é atributo especifica o valor de um elemento &lt;input&gt;. É usado de forma diferente para diferentes tipos de entrada:
+            Para "botão", "redefinir" e "enviar" - define o texto no botão;
+            Para "texto", "senha" e "oculto" - define o valor inicial do campo de entrada;
+            Para "checkbox", "radio", "image" - define o valor associado à entrada.            
 
-      <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade" name="cidade" required />
-      <br />
+        </p>
+       <strong> <li>Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que apenas um deles fique marcado de cada vez?</li> </strong>
+        <p> Para agrupar todos os botões em radio, usa-de o atributo name=””. Para que todos os botões sejam agrupados, todos devem possuir o mesmo atributo name.
+        </p>
+       
+       <strong> <li>Para que serve a tag &lt;label&gt; ? Para que serve o atributo "for" nessa tag?</li> </strong>
+        <p>O &lt;label&gt; elemento define um rótulo para vários elementos de formulário. O &lt;label&gt; elemento também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do &lt;label&gt; elemento, ele alterna o botão de opção/caixa de seleção. O foratributo da &lt;label&gt; tag deve ser igual ao idatributo do &lt;input&gt; elemento para uni-los.
+        </p>
+       
+       <strong> <li>Na tag &lt;option&gt; para que serve o atributo "selected"?</li> </strong>
+        <p>
+            Os &lt;option&gt; elementos definem uma opção que pode ser selecionada.
+                Por padrão, o primeiro item na lista suspensa é selecionado.
+                Para definir uma opção pré-selecionada, adicione o selected atributo à opção: &lt;option value="fiat" selected&gt; Fiat &lt;/ option &gt;
+                
+        </p>
+       
+       <strong>  <li>Nas tags de formulário para que serve o atributo "required"?</li> </strong>
+        <p>
+            O required atributo de entrada especifica que um campo de entrada deve ser preenchido antes de enviar o formulário. O required atributo funciona com os seguintes tipos de entrada: texto, pesquisa, url, tel, e-mail, senha, selecionadores de data, número, caixa de seleção, rádio e arquivo.
+        </p>
+       
+       <strong> <li>Para que serve a tag &lt;textarea&gt;?</li> </strong>
+        <p>
+            O elemento &lt;textarea&gt; cria uma caixa de texto de várias linhas para que o usuário possa digitar e possui atributos rows (define a quantidade de linhas visíveis da caixa) e cols (define a largura visível da caixa).  
 
-      <label for="uf">UF:</label>
-      <select id="uf" name="uf" required>
-        <option value="DF">DF</option>
-        <option value="SP">SP</option>
-        <option value="RJ">RJ</option>
-        <option value="BH">BH</option>
-      </select>
-      <br />
+        </p>
+        
+        <strong> <li>Na tag &lt;form&gt; para que serve o atributo "action"?</li> </strong>
+        <p>
+            O atributo “action”  serve para definir a ação a ser executada quando o formulário for enviado.
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required /><br />
+        </p>
+       
+       <strong> <li>Na tag &lt;form&gt; para que serve o atributo "method"? </li> </strong>
+        <p>
+            O atributo "method" serve para especificar o método HTTP a ser usado ao enviar os dados do formulário.
 
-      <input type="submit" value="Limpar" />
-      <input type="submit" value="Enviar" />
-    </form>
-  </body>
+        </p>
+      
+      <strong> <li>Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o valor do atributo "method" na tag &lt;form&gt; ?</li> </strong> 
+        <p>
+            O valor do atributo method tem que ser “POST” para não aparecer na barra de endereços.
+        </p>
+       
+       <strong> <li>Qual valor deve ser informado no atributo "method" na tag &lt;form&gt; em um formulário que será usado para fazer upload de arquivos?</li> </strong> 
+        <p>
+            O method “POST” é o mais adequado para fazer upload de arquivos porque o envio de arquivos utiliza mais dados do que o envio de um formulário comum.
+        </p>
+       
+       <strong> <li>O que as tags &lt;fieldset&gt; e &lt;legend&gt; produzem?</li> </strong> 
+        <p>
+            O elemento &lt;fieldset&gt; é usado para agrupar dados relacionados em um formulário.
+          O elemento &lt;legend&gt; define uma legenda para o elemento &lt;fieldset&gt;.
+          Em outras palavras, o “fieldset” serve para agrupar o formulário dentro de uma caixa e o “legend” é meio que o título/legenda.
+                
+        </p>
+
+    </ol>
+
+    <a href="./formulario.html">Formulário HTML</a>
+</body>
 </html>
+
